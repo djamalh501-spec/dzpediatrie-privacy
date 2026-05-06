@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suppression de compte — DzPédiatrie</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: #f5f7fa;
+            color: #333;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .card {
+            background: white;
+            border-radius: 16px;
+            padding: 40px;
+            max-width: 600px;
+            width: 100%;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 32px;
+        }
+        .logo-icon {
+            width: 48px;
+            height: 48px;
+            background: #2E7D5C;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .logo-text {
+            font-size: 22px;
+            font-weight: 700;
+            color: #2E7D5C;
+        }
+        h1 {
+            font-size: 24px;
+            color: #c0392b;
+            margin-bottom: 16px;
+        }
+        .warning-box {
+            background: #fdf2f2;
+            border: 1px solid #f5c6c6;
+            border-radius: 8px;
+            padding: 16px;
+            margin-bottom: 24px;
+        }
+        .warning-box p {
+            color: #c0392b;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+        .info-box {
+            background: #f0f7f4;
+            border: 1px solid #a8d5c0;
+            border-radius: 8px;
+            padding: 16px;
+            margin-bottom: 24px;
+        }
+        .info-box h3 {
+            color: #2E7D5C;
+            margin-bottom: 8px;
+            font-size: 16px;
+        }
+        .info-box ul {
+            list-style: none;
+            padding: 0;
+        }
+        .info-box ul li {
+            padding: 4px 0;
+            color: #555;
+            font-size: 14px;
+        }
+        .info-box ul li::before {
+            content: "✓ ";
+            color: #2E7D5C;
+            font-weight: bold;
+        }
+        .steps {
+            margin-bottom: 24px;
+        }
+        .steps h3 {
+            font-size: 16px;
+            margin-bottom: 12px;
+            color: #333;
+        }
+        .step {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 12px;
+            align-items: flex-start;
+        }
+        .step-num {
+            width: 28px;
+            height: 28px;
+            background: #2E7D5C;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 13px;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+        .step-text {
+            font-size: 14px;
+            color: #555;
+            line-height: 1.5;
+            padding-top: 4px;
+        }
+        .email-btn {
+            display: block;
+            background: #c0392b;
+            color: white;
+            text-align: center;
+            padding: 14px 24px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 16px;
+            transition: background 0.2s;
+        }
+        .email-btn:hover { background: #a93226; }
+        .note {
+            font-size: 12px;
+            color: #999;
+            text-align: center;
+            line-height: 1.5;
+        }
+        .divider {
+            border: none;
+            border-top: 1px solid #eee;
+            margin: 24px 0;
+        }
+        .arabic {
+            direction: rtl;
+            text-align: right;
+            font-size: 13px;
+            color: #777;
+            margin-top: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="logo">
+            <div class="logo-icon">+</div>
+            <div class="logo-text">DzPédiatrie</div>
+        </div>
+
+        <h1>🗑️ Suppression de compte</h1>
+
+        <div class="warning-box">
+            <p>
+                <strong>⚠️ Action irréversible.</strong><br>
+                La suppression de votre compte entraîne la suppression définitive 
+                de toutes vos données. Cette action ne peut pas être annulée.
+            </p>
+        </div>
+
+        <div class="info-box">
+            <h3>📋 Données supprimées</h3>
+            <ul>
+                <li>Compte et informations de profil</li>
+                <li>Historique des consultations</li>
+                <li>Ordonnances générées</li>
+                <li>Évaluations IMCI sauvegardées</li>
+                <li>Interactions médicamenteuses consultées</li>
+            </ul>
+        </div>
+
+        <div class="steps">
+            <h3>📧 Comment demander la suppression</h3>
+            <div class="step">
+                <div class="step-num">1</div>
+                <div class="step-text">
+                    Envoyez un email à <strong>djamal.dev1974@gmail.com</strong>
+                    avec l'objet <strong>"Suppression compte DzPédiatrie"</strong>
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-num">2</div>
+                <div class="step-text">
+                    Incluez l'adresse email associée à votre compte DzPédiatrie
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-num">3</div>
+                <div class="step-text">
+                    Vous recevrez une confirmation sous <strong>72 heures</strong>.
+                    Votre compte sera supprimé dans les <strong>7 jours ouvrables</strong>.
+                </div>
+            </div>
+        </div>
+
+        <a href="mailto:djamal.dev1974@gmail.com?subject=Suppression%20compte%20DzP%C3%A9diatrie&body=Bonjour%2C%0A%0AJe%20souhaite%20supprimer%20mon%20compte%20DzP%C3%A9diatrie.%0A%0AEmail%20du%20compte%20%3A%20%5BVotre%20email%5D%0A%0AMerci." 
+           class="email-btn">
+            📧 Envoyer la demande de suppression
+        </a>
+
+        <p class="note">
+            En cliquant sur ce bouton, votre application email s'ouvrira avec un 
+            message pré-rempli. Ajoutez l'email de votre compte et envoyez.
+        </p>
+
+        <hr class="divider">
+
+        <p class="arabic">
+            لحذف حسابك، أرسل بريداً إلكترونياً إلى djamal.dev1974@gmail.com
+            مع ذكر "حذف حساب DzPédiatrie" في الموضوع.
+            سيتم الحذف خلال 7 أيام عمل.
+        </p>
+
+        <hr class="divider">
+
+        <p class="note">
+            DzPédiatrie — DJAMAL HANI © 2026<br>
+            <a href="https://djamalh501-spec.github.io/dzpediatrie-privacy/" 
+               style="color:#2E7D5C">Politique de confidentialité</a>
+        </p>
+    </div>
+</body>
+</html>
