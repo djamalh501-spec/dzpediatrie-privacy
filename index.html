@@ -1,1066 +1,421 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="DzPédiatrie — Plateforme éducative en pédiatrie. Application pédagogique et de référence destinée à un usage éducatif uniquement. Ne remplace pas un avis médical professionnel.">
-  <meta name="keywords" content="pédiatrie, enfant, santé, référence, éducatif, information, algérie, dz, pediatric, reference, educational">
-  <meta name="author" content="DzPédiatrie">
-  <meta name="robots" content="index, follow">
-  <meta property="og:title" content="DzPédiatrie — Politique de Confidentialité">
-  <meta property="og:description" content="Plateforme éducative en pédiatrie. Usage éducatif uniquement — ne remplace pas un avis médical professionnel.">
-  <meta property="og:type" content="website">
-  <meta property="og:locale" content="fr_DZ">
-  <meta name="theme-color" content="#10B981">
-  <meta name="mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>DzPédiatrie — Politique de Confidentialité</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+
+  <meta
+    name="description"
+    content="Politique de confidentialité officielle de DzPédiatrie — plateforme éducative et documentaire en pédiatrie."
+  />
+
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#12c48b" />
+
   <style>
-    *, *::before, *::after {
+    :root {
+      --primary: #12c48b;
+      --primary-dark: #0fa574;
+      --bg: #f5fbf8;
+      --card: #ffffff;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --border: #dbe7e1;
+      --warning-bg: #fff8e8;
+      --warning-border: #f3d58a;
+      --warning-text: #8a5a00;
+      --shadow: 0 8px 24px rgba(0,0,0,0.06);
+      --radius: 18px;
+      --max-width: 980px;
+    }
+
+    * {
       box-sizing: border-box;
       margin: 0;
       padding: 0;
     }
 
-    :root {
-      --primary: #10B981;
-      --primary-dark: #059669;
-      --primary-light: #D1FAE5;
-      --primary-lighter: #ECFDF5;
-      --accent: #0EA5E9;
-      --text: #1E293B;
-      --text-muted: #64748B;
-      --border: #E2E8F0;
-      --surface: #FFFFFF;
-      --background: #F0FDF4;
-      --warning-bg: #FFFBEB;
-      --warning-border: #FDE68A;
-      --warning-text: #92400E;
-      --error: #DC2626;
-      --radius: 16px;
-      --radius-sm: 8px;
-      --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-      --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-    }
-
     html {
       scroll-behavior: smooth;
-      font-size: 16px;
     }
 
     body {
-      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-      background: var(--background);
+      font-family: Inter, Arial, sans-serif;
+      background: var(--bg);
       color: var(--text);
       line-height: 1.7;
-      min-height: 100vh;
-      -webkit-font-smoothing: antialiased;
     }
 
-    /* ── Header ── */
-    .header {
-      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
-      padding: 1.5rem 1rem;
-      position: sticky;
-      top: 0;
-      z-index: 100;
-      box-shadow: var(--shadow-lg);
-    }
-
-    .header-inner {
-      max-width: 900px;
-      margin: 0 auto;
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-    }
-
-    .logo {
-      width: 48px;
-      height: 48px;
-      background: rgba(255, 255, 255, 0.15);
-      border-radius: 14px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-shrink: 0;
-    }
-
-    .logo svg {
-      width: 28px;
-      height: 28px;
-      fill: white;
-    }
-
-    .header-text h1 {
-      font-family: 'Poppins', sans-serif;
-      font-size: 1.25rem;
-      font-weight: 700;
-      color: white;
-      line-height: 1.3;
-    }
-
-    .header-text p {
-      font-size: 0.8rem;
-      color: rgba(255, 255, 255, 0.85);
-      font-weight: 400;
-    }
-
-    /* ── Container ── */
-    .container {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 2rem 1.25rem 4rem;
-    }
-
-    /* ── Compliance Notice ── */
-    .compliance-banner {
-      background: var(--primary-lighter);
-      border: 1px solid var(--primary-light);
-      border-radius: var(--radius);
-      padding: 1.25rem;
-      margin-bottom: 2rem;
-      display: flex;
-      gap: 1rem;
-      align-items: flex-start;
-    }
-
-    .compliance-icon {
-      width: 40px;
-      height: 40px;
-      background: var(--primary-light);
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-shrink: 0;
-    }
-
-    .compliance-icon svg {
-      width: 20px;
-      height: 20px;
-      stroke: var(--primary-dark);
-      fill: none;
-    }
-
-    .compliance-text h2 {
-      font-family: 'Poppins', sans-serif;
-      font-size: 1rem;
-      font-weight: 600;
+    a {
       color: var(--primary-dark);
-      margin-bottom: 0.35rem;
-    }
-
-    .compliance-text p {
-      font-size: 0.875rem;
-      color: var(--text);
-      line-height: 1.5;
-    }
-
-    /* ── Warning Banner ── */
-    .warning-banner {
-      background: var(--warning-bg);
-      border: 1px solid var(--warning-border);
-      border-radius: var(--radius);
-      padding: 1rem 1.25rem;
-      margin-bottom: 2rem;
-      display: flex;
-      gap: 0.75rem;
-      align-items: center;
-    }
-
-    .warning-icon {
-      width: 36px;
-      height: 36px;
-      background: var(--warning-border);
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-shrink: 0;
-    }
-
-    .warning-icon svg {
-      width: 18px;
-      height: 18px;
-      stroke: var(--warning-text);
-      fill: none;
-    }
-
-    .warning-text {
-      font-size: 0.875rem;
-      color: var(--warning-text);
-      font-weight: 500;
-    }
-
-    /* ── Card ── */
-    .card {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
-      overflow: hidden;
-      margin-bottom: 1.5rem;
-    }
-
-    .card-header {
-      padding: 1.25rem 1.5rem;
-      border-bottom: 1px solid var(--border);
-      display: flex;
-      align-items: center;
-      gap: 0.75rem;
-      background: var(--primary-lighter);
-    }
-
-    .card-header-icon {
-      width: 36px;
-      height: 36px;
-      background: white;
-      border-radius: 10px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      box-shadow: var(--shadow);
-    }
-
-    .card-header-icon svg {
-      width: 18px;
-      height: 18px;
-      stroke: var(--primary);
-      fill: none;
-    }
-
-    .card-header h3 {
-      font-family: 'Poppins', sans-serif;
-      font-size: 1rem;
-      font-weight: 600;
-      color: var(--primary-dark);
-    }
-
-    .card-body {
-      padding: 1.5rem;
-    }
-
-    .card-body p,
-    .card-body li {
-      font-size: 0.9rem;
-      color: var(--text-muted);
-      line-height: 1.7;
-    }
-
-    .card-body p + p,
-    .card-body p + ul {
-      margin-top: 1rem;
-    }
-
-    .card-body ul {
-      list-style: none;
-      margin-top: 0.75rem;
-    }
-
-    .card-body ul li {
-      position: relative;
-      padding-left: 1.5rem;
-      margin-bottom: 0.6rem;
-    }
-
-    .card-body ul li::before {
-      content: '';
-      position: absolute;
-      left: 0;
-      top: 0.55rem;
-      width: 6px;
-      height: 6px;
-      background: var(--primary);
-      border-radius: 50%;
-    }
-
-    .card-body ul li strong {
-      color: var(--text);
-      font-weight: 600;
-    }
-
-    .card-body strong {
-      color: var(--text);
-    }
-
-    .card-body p.disclaimer {
-      margin-top: 1rem;
-      padding: 1rem;
-      background: var(--warning-bg);
-      border: 1px solid var(--warning-border);
-      border-radius: var(--radius-sm);
-      font-size: 0.85rem;
-      font-style: italic;
-      color: var(--warning-text);
-      font-weight: 500;
-    }
-
-    /* ── Section Divider ── */
-    .section-divider {
-      height: 1px;
-      background: linear-gradient(to right, transparent, var(--border), transparent);
-      margin: 2rem 0;
-    }
-
-    /* ── Info Grid ── */
-    .info-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 1rem;
-      margin-bottom: 1.5rem;
-    }
-
-    .info-item {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: var(--radius-sm);
-      padding: 1rem 1.25rem;
-    }
-
-    .info-item-label {
-      font-size: 0.7rem;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-      color: var(--text-muted);
-      margin-bottom: 0.25rem;
-      font-weight: 600;
-    }
-
-    .info-item-value {
-      font-size: 0.875rem;
-      color: var(--text);
-      font-weight: 500;
-    }
-
-    /* ── Table of Contents ── */
-    .toc {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 1.5rem;
-      margin-bottom: 2rem;
-    }
-
-    .toc-title {
-      font-family: 'Poppins', sans-serif;
-      font-size: 1rem;
-      font-weight: 600;
-      color: var(--text);
-      margin-bottom: 1rem;
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-    }
-
-    .toc-title svg {
-      width: 18px;
-      height: 18px;
-      stroke: var(--primary);
-      fill: none;
-    }
-
-    .toc nav ol {
-      list-style: decimal;
-      padding-left: 1.5rem;
-    }
-
-    .toc nav ol li {
-      margin-bottom: 0.5rem;
-    }
-
-    .toc nav ol li a {
-      color: var(--primary);
       text-decoration: none;
-      font-size: 0.875rem;
-      font-weight: 500;
-      transition: color 0.2s;
     }
 
-    .toc nav ol li a:hover {
-      color: var(--primary-dark);
+    a:hover {
       text-decoration: underline;
     }
 
-    /* ── Footer ── */
-    .footer {
-      background: var(--surface);
-      border-top: 1px solid var(--border);
-      padding: 2rem 1.25rem;
-      margin-top: 3rem;
-    }
-
-    .footer-inner {
-      max-width: 800px;
-      margin: 0 auto;
+    header {
+      background: linear-gradient(135deg, #10b981, #34d399);
+      color: white;
+      padding: 72px 20px 60px;
       text-align: center;
     }
 
-    .footer-logo {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
-      margin-bottom: 1rem;
+    header h1 {
+      font-size: 2.8rem;
+      font-weight: 800;
+      margin-bottom: 12px;
     }
 
-    .footer-logo svg {
-      width: 24px;
-      height: 24px;
-      fill: var(--primary);
-    }
-
-    .footer-logo span {
-      font-family: 'Poppins', sans-serif;
-      font-size: 1rem;
-      font-weight: 600;
-      color: var(--text);
-    }
-
-    .footer p {
-      font-size: 0.8rem;
-      color: var(--text-muted);
-      line-height: 1.6;
-      max-width: 600px;
+    header p {
+      max-width: 760px;
       margin: 0 auto;
+      font-size: 1.1rem;
+      opacity: 0.95;
     }
 
-    .footer-divider {
-      height: 1px;
-      background: var(--border);
-      margin: 1.5rem 0;
+    .container {
+      width: 100%;
+      max-width: var(--max-width);
+      margin: -30px auto 80px;
+      padding: 0 20px;
     }
 
-    .footer-links {
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      flex-wrap: wrap;
-      margin-bottom: 1.5rem;
+    .warning-banner {
+      background: var(--warning-bg);
+      border: 1px solid var(--warning-border);
+      color: var(--warning-text);
+      border-radius: var(--radius);
+      padding: 20px;
+      margin-bottom: 28px;
+      box-shadow: var(--shadow);
     }
 
-    .footer-links a {
-      color: var(--primary);
-      text-decoration: none;
-      font-size: 0.85rem;
-      font-weight: 500;
-      transition: color 0.2s;
+    .warning-banner strong {
+      display: block;
+      margin-bottom: 8px;
+      font-size: 1rem;
     }
 
-    .footer-links a:hover {
+    .card {
+      background: var(--card);
+      border-radius: var(--radius);
+      padding: 32px;
+      margin-bottom: 24px;
+      box-shadow: var(--shadow);
+      border: 1px solid var(--border);
+    }
+
+    .card h2 {
+      font-size: 1.5rem;
+      margin-bottom: 18px;
       color: var(--primary-dark);
     }
 
-    .footer-legal {
-      font-size: 0.75rem;
-      color: var(--text-muted);
+    .card h3 {
+      margin-top: 22px;
+      margin-bottom: 10px;
+      font-size: 1.05rem;
     }
 
-    /* ── Responsive ── */
-    @media (max-width: 600px) {
-      .header {
-        padding: 1rem;
-      }
-
-      .header-inner {
-        gap: 0.75rem;
-      }
-
-      .logo {
-        width: 40px;
-        height: 40px;
-        border-radius: 10px;
-      }
-
-      .logo svg {
-        width: 22px;
-        height: 22px;
-      }
-
-      .header-text h1 {
-        font-size: 1rem;
-      }
-
-      .header-text p {
-        font-size: 0.7rem;
-      }
-
-      .container {
-        padding: 1.25rem 1rem 3rem;
-      }
-
-      .compliance-banner,
-      .warning-banner {
-        padding: 1rem;
-        gap: 0.75rem;
-      }
-
-      .compliance-icon,
-      .warning-icon {
-        width: 34px;
-        height: 34px;
-        flex-shrink: 0;
-      }
-
-      .compliance-icon svg,
-      .warning-icon svg {
-        width: 16px;
-        height: 16px;
-      }
-
-      .card-header {
-        padding: 1rem 1.25rem;
-      }
-
-      .card-body {
-        padding: 1.25rem;
-      }
-
-      .info-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .toc {
-        padding: 1.25rem;
-      }
+    .card p {
+      margin-bottom: 14px;
+      color: var(--text);
     }
 
-    /* ── Print Styles ── */
-    @media print {
-      body {
-        background: white;
-        color: black;
-      }
-
-      .header {
-        background: var(--primary) !important;
-        -webkit-print-color-adjust: exact;
-        print-color-adjust: exact;
-      }
-
-      .warning-banner,
-      .compliance-banner {
-        background: var(--warning-bg) !important;
-        -webkit-print-color-adjust: exact;
-        print-color-adjust: exact;
-      }
+    .card ul {
+      padding-left: 22px;
+      margin-bottom: 16px;
     }
 
-    /* ── Accessibility ── */
-    @media (prefers-reduced-motion: reduce) {
-      * {
-        transition: none !important;
-        animation: none !important;
+    .card li {
+      margin-bottom: 10px;
+    }
+
+    .toc {
+      display: grid;
+      gap: 10px;
+    }
+
+    .toc a {
+      padding: 12px 14px;
+      border-radius: 12px;
+      background: #f0faf6;
+      border: 1px solid var(--border);
+      transition: 0.2s ease;
+      font-weight: 600;
+    }
+
+    .toc a:hover {
+      background: #e4f8ef;
+      transform: translateY(-1px);
+    }
+
+    .info-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 18px;
+      margin-top: 16px;
+    }
+
+    .info-item {
+      background: #f8fffb;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 18px;
+    }
+
+    .info-item span {
+      display: block;
+      color: var(--muted);
+      font-size: 0.92rem;
+      margin-bottom: 6px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px 20px 60px;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 700px) {
+      header h1 {
+        font-size: 2.1rem;
       }
-    }
 
-    :target {
-      outline: 2px solid var(--primary);
-      outline-offset: 4px;
-    }
-
-    .visually-hidden {
-      position: absolute;
-      width: 1px;
-      height: 1px;
-      padding: 0;
-      margin: -1px;
-      overflow: hidden;
-      clip: rect(0, 0, 0, 0);
-      white-space: nowrap;
-      border: 0;
+      .card {
+        padding: 24px;
+      }
     }
   </style>
 </head>
-<body>
-  <!-- Skip Link for Accessibility -->
-  <a href="#main-content" class="visually-hidden">Passer au contenu principal</a>
 
-  <!-- ── Header ── -->
-  <header class="header" role="banner">
-    <div class="header-inner">
-      <div class="logo" aria-hidden="true">
-        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-          <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 14c-3.3 0-6-2.7-6-6s2.7-6 6-6 6 2.7 6 6-2.7 6-6 6zm0-10c-2.2 0-4 1.8-4 4s1.8 4 4 4 4-1.8 4-4-1.8-4-4-4z"/>
-          <circle cx="12" cy="12" r="3"/>
-        </svg>
-      </div>
-      <div class="header-text">
-        <h1>DzPédiatrie</h1>
-        <p>Plateforme éducative · Référence Pédiatrique Algérie</p>
-      </div>
-    </div>
+<body>
+
+  <header>
+    <h1>DzPédiatrie</h1>
+    <p>
+      Politique officielle de confidentialité et de protection des données
+      de la plateforme éducative et documentaire DzPédiatrie.
+    </p>
   </header>
 
-  <!-- ── Main Content ── -->
-  <main id="main-content">
-    <div class="container">
+  <main class="container">
 
-      <!-- Compliance Notice -->
-      <div class="compliance-banner" role="note" aria-label="Avis de conformité">
-        <div class="compliance-icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
-            <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
-            <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
-          </svg>
-        </div>
-        <div class="compliance-text">
-          <h2>Application de Référence Pédagogique</h2>
-          <p>DzPédiatrie est une plateforme éducative et documentaire en pédiatrie. L'ensemble du contenu est strictement informatif et de référence — à vérifier selon les protocoles officiels par un professionnel de santé qualifié.</p>
-        </div>
-      </div>
+    <section class="warning-banner" aria-label="Avertissement éducatif">
+      <strong>Usage éducatif uniquement</strong>
+      DzPédiatrie est une plateforme documentaire et pédagogique.
+      Les informations affichées sont fournies à titre informatif et éducatif
+      uniquement et doivent être vérifiées selon les protocoles officiels
+      et les recommandations locales applicables.
+    </section>
 
-      <!-- Educational Disclaimer -->
-      <div class="warning-banner" role="alert" aria-label="Avertissement important">
-        <div class="warning-icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
-            <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/>
-            <line x1="12" y1="9" x2="12" y2="13"/>
-            <line x1="12" y1="17" x2="12.01" y2="17"/>
-          </svg>
-        </div>
-        <p class="warning-text">Contenu strictement éducatif et documentaire. DzPédiatrie ne constitue pas un avis médical professionnel et ne remplace pas la consultation d'un médecin ou d'un professionnel de santé qualifié. En cas d'urgence médicale réelle, contactez immédiatement les services d'urgence officiels.</p>
-      </div>
+    <section class="card">
+      <h2>Sommaire</h2>
 
-      <!-- Table of Contents -->
       <nav class="toc" aria-label="Table des matières">
-        <div class="toc-title">
-          <svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
-            <line x1="8" y1="6" x2="21" y2="6"/>
-            <line x1="8" y1="12" x2="21" y2="12"/>
-            <line x1="8" y1="18" x2="21" y2="18"/>
-            <line x1="3" y1="6" x2="3.01" y2="6"/>
-            <line x1="3" y1="12" x2="3.01" y2="12"/>
-            <line x1="3" y1="18" x2="3.01" y2="18"/>
-          </svg>
-          Table des matières
-        </div>
-        <ol>
-          <li><a href="#identification">Identification de l'éditeur</a></li>
-          <li><a href="#nature">Nature du service</a></li>
-          <li><a href="#donnees">Collecte de données</a></li>
-          <li><a href="#stockage">Stockage local</a></li>
-          <li><a href="#cloud">Services cloud</a></li>
-          <li><a href="#photos">Images et photos</a></li>
-          <li><a href="#ia">Fonctionnalités de référence IA</a></li>
-          <li><a href="#stockage-cloud">Infrastructure Supabase</a></li>
-          <li><a href="#droits">Vos droits (RGPD)</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ol>
+        <a href="#introduction">1. Introduction</a>
+        <a href="#donnees">2. Données collectées</a>
+        <a href="#utilisation">3. Utilisation des données</a>
+        <a href="#stockage">4. Stockage et sécurité</a>
+        <a href="#partage">5. Partage des informations</a>
+        <a href="#droits">6. Vos droits</a>
+        <a href="#suppression">7. Suppression des données</a>
+        <a href="#ia">8. Informations générées</a>
+        <a href="#responsabilite">9. Limitation de responsabilité</a>
+        <a href="#contact">10. Contact</a>
       </nav>
+    </section>
 
-      <!-- Info Grid -->
-      <div class="info-grid" role="complementary" aria-label="Informations légales">
-        <div class="info-item">
-          <div class="info-item-label">Application</div>
-          <div class="info-item-value">DzPédiatrie</div>
-        </div>
-        <div class="info-item">
-          <div class="info-item-label">Version</div>
-          <div class="info-item-value">1.0.0</div>
-        </div>
-        <div class="info-item">
-          <div class="info-item-label">Plateforme</div>
-          <div class="info-item-value">Android (Google Play)</div>
-        </div>
-        <div class="info-item">
-          <div class="info-item-label">Dernière mise à jour</div>
-          <div class="info-item-value">Mai 2026</div>
-        </div>
-      </div>
-
-      <!-- Section 1: Editor Identification -->
-      <article id="identification" class="card">
-        <header class="card-header">
-          <div class="card-header-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
-              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
-              <circle cx="12" cy="7" r="4"/>
-            </svg>
-          </div>
-          <h3>1. Identification de l'Éditeur</h3>
-        </header>
-        <div class="card-body">
-          <p><strong>Éditeur :</strong> DzPédiatrie — Plateforme éducative en pédiatrie, Algérie.</p>
-          <p><strong>Type :</strong> Application mobile de référence documentaire et pédagogique en pédiatrie.</p>
-          <p><strong>Objectif :</strong> Fournir un accès informatif et éducatif à des documents de référence en pédiatrie, destinée aux utilisateurs recherchant des ressources pédagogiques et documentées en pédiatrie.</p>
-          <p class="disclaimer">DzPédiatrie est positionnée comme une ressource éducative et de référence. L'ensemble du contenu est documentaire et doit être vérifié selon les protocoles officiels.</p>
-        </div>
-      </article>
-
-      <div class="section-divider" aria-hidden="true"></div>
-
-      <!-- Section 2: Nature of Service -->
-      <article id="nature" class="card">
-        <header class="card-header">
-          <div class="card-header-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
-              <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
-              <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
-            </svg>
-          </div>
-          <h3>2. Nature du Service</h3>
-        </header>
-        <div class="card-body">
-          <p>DzPédiatrie est une <strong>application de référence éducative et documentaire</strong> en pédiatrie, destinée à un usage strictement informatif.</p>
-          <p><strong>Caractéristiques principales :</strong></p>
-          <ul>
-            <li><strong>Base de données de référence :</strong> Accès à des informations documentées sur les médicaments, posologies, calendriers vaccinaux, et protocoles de référence en pédiatrie.</li>
-            <li><strong>Outil de calcul pédagogique :</strong> Calculateur de doses à titre indicatif et éducatif uniquement — résultats à vérifier selon les protocoles officiels.</li>
-            <li><strong>Références pédagogiques :</strong> Informations de référence générées par intelligence artificielle, à titre documentaire et éducatif.</li>
-            <li><strong>Calendrier vaccinal de référence :</strong> Informations documentées sur le calendrier vaccinal algérien à usage éducatif.</li>
-          </ul>
-          <p><strong>Usage strictement éducatif :</strong></p>
-          <ul>
-            <li>L'application <strong>ne constitue pas</strong> un avis médical ou une consultation de quelque nature que ce soit.</li>
-            <li>Les informations <strong>ne remplacent pas</strong> le jugement clinique d'un professionnel de santé qualifié.</li>
-            <li>L'application <strong>ne diagnostique pas</strong> et ne prescrit pas de traitement.</li>
-            <li>Les résultats des calculateurs <strong>doivent être vérifiés</strong> selon les protocoles officiels avant toute utilisation réelle.</li>
-          </ul>
-          <p class="disclaimer">En cas d'urgence médicale réelle concernant un enfant, contactez immédiatement les services d'urgence officiels (15 ou 112 en Algérie).</p>
-        </div>
-      </article>
-
-      <div class="section-divider" aria-hidden="true"></div>
-
-      <!-- Section 3: Data Collection -->
-      <article id="donnees" class="card">
-        <header class="card-header">
-          <div class="card-header-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
-              <ellipse cx="12" cy="5" rx="9" ry="3"/>
-              <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/>
-              <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/>
-            </svg>
-          </div>
-          <h3>3. Collecte de Données</h3>
-        </header>
-        <div class="card-body">
-          <p><strong>Données collectées lors de l'inscription :</strong></p>
-          <ul>
-            <li><strong>Nom d'utilisateur et mot de passe :</strong> Pour la création et gestion du compte utilisateur.</li>
-            <li><strong>Profil utilisateur :</strong> Informations saisies par l'utilisateur (ex : étudiant en médecine, professionnel de santé, pharmacien) pour positionner le contenu comme référence documentaire.</li>
-            <li><strong>Nom de la structure :</strong> Optionnel, pour référence personnelle.</li>
-          </ul>
-          <p><strong>Données pédagogiques (à usage éducatif uniquement) :</strong></p>
-          <ul>
-            <li><strong>Données des patients fictionalisés :</strong> Création de fiches patients à usage strictement éducatif et de référence, ne constituant pas un dossier médical réel.</li>
-            <li><strong>Âge et poids de l'enfant :</strong> Saisis dans le calculateur pédagogique pour générer des résultats de référence informatifs — résultats à vérifier selon les protocoles.</li>
-            <li><strong>Antécédents médicaux sommaires :</strong> Champ optionnel à titre documentaire et de référence uniquement.</li>
-          </ul>
-          <p><strong>Données de navigation et de performance :</strong></p>
-          <ul>
-            <li>Logs de performance anonymisés pour améliorer l'expérience utilisateur de référence documentaire.</li>
-            <li>Données d'utilisation statistiques (sans identification personnelle) pour évaluer la pertinence du contenu éducatif.</li>
-          </ul>
-          <p class="disclaimer">DzPédiatrie ne constitue pas un système de gestion clinique. Toutes les fiches patients sont fictionalisées et à usage strictement éducatif.</p>
-        </div>
-      </article>
-
-      <div class="section-divider" aria-hidden="true"></div>
-
-      <!-- Section 4: Local Storage -->
-      <article id="stockage" class="card">
-        <header class="card-header">
-          <div class="card-header-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
-              <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
-              <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
-              <line x1="12" y1="22.08" x2="12" y2="12"/>
-            </svg>
-          </div>
-          <h3>4. Stockage Local</h3>
-        </header>
-        <div class="card-body">
-          <p><strong>Base de données SQLite locale :</strong></p>
-          <ul>
-            <li><strong>Contenu documentaire :</strong> Base de données locale contenant les informations de référence en pédiatrie (médicaments, posologies, formes pharmaceutiques, calendriers vaccinaux).</li>
-            <li><strong>Données de référence :</strong> Informations sur les principes actifs, classes thérapeutiques, et marques algériennes courantes.</li>
-            <li><strong>Données de vaccination :</strong> Contenu du calendrier vaccinal algérien avec règles de rattrapage.</li>
-          </ul>
-          <p><strong>Gestion des fiches patients fictionalisées :</strong></p>
-          <ul>
-            <li>Les fiches patients créées dans l'application sont stockées <strong>uniquement sur l'appareil de l'utilisateur</strong> (stockage local).</li>
-            <li><strong>Aucune synchronisation</strong> des fiches patients avec un serveur cloud n'est effectuée.</li>
-            <li>Les fiches patients constituent des <strong>exemples éducatifs fictionalisés</strong> et ne constituent pas un dossier médical protégé.</li>
-          </ul>
-          <p><strong>Suppression des données locales :</strong></p>
-          <ul>
-            <li>La désinstallation de l'application supprime automatiquement l'ensemble des données locales.</li>
-            <li>Pour supprimer les données locales sans désinstallation, contactez l'éditeur via les canaux indiqués dans la section contact.</li>
-          </ul>
-        </div>
-      </article>
-
-      <div class="section-divider" aria-hidden="true"></div>
-
-      <!-- Section 5: Cloud Services -->
-      <article id="cloud" class="card">
-        <header class="card-header">
-          <div class="card-header-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
-              <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/>
-            </svg>
-          </div>
-          <h3>5. Services Cloud</h3>
-        </header>
-        <div class="card-body">
-          <p><strong>Infrastructure Supabase :</strong></p>
-          <ul>
-            <li><strong>Authentification :</strong> Service d'authentification Supabase pour la gestion des comptes utilisateurs.</li>
-            <li><strong>Base de données cloud :</strong> Stockage des données de référence enrichies (modifications éditoriales, validations professionnelles) dans une base Supabase PostgreSQL.</li>
-            <li><strong>Service de référence IA :</strong> Système de réponses informatives générées par intelligence artificielle à titre documentaire et éducatif.</li>
-          </ul>
-          <p><strong>Données cloud :</strong></p>
-          <ul>
-            <li>Données de profil utilisateur (nom, domaine d'activité, structure).</li>
-            <li>Logs de navigation à des fins de statistiques anonymisées de pertinence du contenu.
-            <li>Contenus de référence validés et enrichis par les éditeurs.</li>
-          </ul>
-          <p class="disclaimer">Les données échangées avec les services cloud Supabase sont protégées par les conditions de service Supabase. L'éditeur DzPédiatrie ne stocke pas de données cliniques réelles dans son infrastructure cloud.</p>
-        </div>
-      </article>
-
-      <div class="section-divider" aria-hidden="true"></div>
-
-      <!-- Section 6: Images and Photos -->
-      <article id="photos" class="card">
-        <header class="card-header">
-          <div class="card-header-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
-              <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
-              <circle cx="8.5" cy="8.5" r="1.5"/>
-              <polyline points="21 15 16 10 5 21"/>
-            </svg>
-          </div>
-          <h3>6. Images et Photographies</h3>
-        </header>
-        <div class="card-body">
-          <p><strong>Gestion des images dans l'application :</strong></p>
-          <ul>
-            <li><strong>Images illustratives éducatives :</strong> Les utilisateurs peuvent sélectionner des images depuis leur galerie à des fins de <strong>référence visuelle documentaire</strong> dans l'application.</li>
-            <li><strong>Traitement local :</strong> Les images sélectionnées sont <strong>traitées localement sur l'appareil</strong> et ne sont pas analysées par un système de diagnostic.</li>
-            <li><strong>Stockage temporaire :</strong> Les images ne sont stockées <strong>uniquement que dans la session d'utilisation en cours</strong>, à des fins de référence illustrative.</li>
-          </ul>
-          <p><strong>Pas d'analyse par intelligence artificielle :</strong></p>
-          <ul>
-            <li>DzPédiatrie <strong>n'utilise pas</strong> les images téléversées par intelligence artificielle ou tout autre moyen automatisé.</li>
-            <li>Les images sont uniquement utilisées à titre de <strong>référence illustrative</strong> dans le contexte de référence éducative.</li>
-            <li><strong>Aucune image</strong> n'est transmise à des services cloud tiers pour analyse ou stockage.</li>
-          </ul>
-          <p class="disclaimer">Pour tout usage clinique réel impliquant des images médicales, consultez directement un professionnel de santé qualifié.</p>
-        </div>
-      </article>
-
-      <div class="section-divider" aria-hidden="true"></div>
-
-      <!-- Section 7: AI Features -->
-      <article id="ia" class="card">
-        <header class="card-header">
-          <div class="card-header-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
-              <path d="M12 2a4 4 0 0 1 4 4 4 4 0 0 1-4 4 4 4 0 0 1-4-4 4 4 0 0 1 4-4m0 2a2 2 0 0 0-2 2 2 2 0 0 0 2 2 2 2 0 0 0 2-2 2 2 0 0 0-2-2m0 14a4 4 0 0 1 4-4 4 4 0 0 1-4 4 4 4 0 0 1-4-4 4 4 0 0 1 4-4m0 2a2 2 0 0 0-2 2 2 2 0 0 0 2 2 2 2 0 0 0 2-2 2 2 0 0 0-2-2"/>
-              <path d="M12 2v20"/>
-              <path d="M2 12h20"/>
-            </svg>
-          </div>
-          <h3>7. Fonctionnalités de Référence IA</h3>
-        </header>
-        <div class="card-body">
-          <p><strong>Service de réponses informatives générées par IA :</strong></p>
-          <ul>
-            <li><strong>Réponses documentaires :</strong> DzPédiatrie utilise un service d'intelligence artificielle pour générer des <strong>informations de référence à caractère éducatif et documentaire</strong>.</li>
-            <li><strong>Contenu de référence :</strong> Les réponses générées constituent des <strong>informations pédagogiques illustratives</strong>, à comparer et vérifier selon les protocoles officiels.</li>
-            <li><strong>Indicateurs de fiabilité :</strong> Chaque réponse est associée à un indicateur de fiabilité (Élevée, Moyenne, Faible) pour informer l'utilisateur du niveau de certitude documentaire.</li>
-          </ul>
-          <p><strong>Limitations et avertissements :</strong></p>
-          <ul>
-            <li>Les réponses générées <strong>ne constituent pas</strong> un avis médical, une consultation, ou une aide à la décision clinique.</li>
-            <li>Les informations <strong>doivent être vérifiées</strong> selon les protocoles officiels par un professionnel de santé qualifié avant toute utilisation.</li>
-            <li>DzPédiatrie <strong>ne remplace pas</strong> l'expertise d'un professionnel de santé.</li>
-            <li>Les réponses <strong>ne diagnostiquent pas</strong> et <strong>ne prescrivent pas</strong>.</li>
-          </ul>
-          <p><strong>Modes d'utilisation :</strong></p>
-          <ul>
-            <li><strong>Référence documentaire :</strong> Accès à des informations de référence à des fins pédagogiques.</li>
-            <li><strong>Recherche documentaire :</strong> Interrogation de l'IA pour retrouver des informations documentées dans la base de référence.</li>
-            <li><strong>Éléments de révision :</strong> Utilisation des réponses comme supports de révision et de formation continue.</li>
-          </ul>
-          <p class="disclaimer">L'ensemble des informations générées par IA dans DzPédiatrie est <strong>strictement à usage éducatif</strong> et documentaire. L'utilisateur est responsable de la vérification des informations selon les protocoles officiels.</p>
-        </div>
-      </article>
-
-      <div class="section-divider" aria-hidden="true"></div>
-
-      <!-- Section 8: Supabase Infrastructure -->
-      <article id="stockage-cloud" class="card">
-        <header class="card-header">
-          <div class="card-header-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
-              <path d="M21 2l-2 2m-7 2l2-2M3 12l-2-2m7 2l2 2M12 2l2-2m-7 2l-2 2m0 14l2-2m-7 2l2 2"/>
-              <circle cx="12" cy="12" r="3"/>
-            </svg>
-          </div>
-          <h3>8. Infrastructure Supabase</h3>
-        </header>
-        <div class="card-body">
-          <p><strong>Plateforme Supabase :</strong></p>
-          <ul>
-            <li><strong>Authentification sécurisée :</strong> Service Supabase Auth pour la gestion des identités et sessions utilisateurs.</li>
-            <li><strong>Base de données PostgreSQL :</strong> Stockage cloud des données de référence DzPédiatrie.</li>
-            <li><strong>Service de références IA :</strong> Infrastructure pour les réponses informatives générées par IA.</li>
-          </ul>
-          <p><strong>Données stockées côté cloud :</strong></p>
-          <ul>
-            <li>Données de profil utilisateur (compte, domaine d'activité).</li>
-            <li>Logs de navigation à des fins statistiques anonymisées.</li>
-            <li>Contenus de référence enrichis et validés par les éditeurs.</li>
-            <li>Données de vaccination de référence (calendrier, règles).</li>
-          </ul>
-          <p><strong>Données NON stockées côté cloud :</strong></p>
-          <ul>
-            <li>Fiches patients fictionalisées (stockage local uniquement).</li>
-            <li>Images sélectionnées par l'utilisateur (traitement local uniquement).</li>
-            <li>Données sensibles de patients réels (DzPédiatrie n'est pas un système de gestion clinique).</li>
-          </ul>
-          <p><strong>Protection des données :</strong></p>
-          <ul>
-            <li>Accès protégé par authentification Supabase.</li>
-            <li>Politique de rétention des données conforme aux <strong>réglementations applicables</strong>.</li>
-            <li>Aucune donnée médicale réelle n'est stockée dans l'infrastructure cloud.</li>
-          </ul>
-        </div>
-      </article>
-
-      <div class="section-divider" aria-hidden="true"></div>
-
-      <!-- Section 9: User Rights (GDPR) -->
-      <article id="droits" class="card">
-        <header class="card-header">
-          <div class="card-header-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
-              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-            </svg>
-          </div>
-          <h3>9. Vos Droits (RGPD / Réglementation Algérienne)</h3>
-        </header>
-        <div class="card-body">
-          <p><strong>Conformité réglementaire :</strong></p>
-          <ul>
-            <li><strong>Droit d'accès :</strong> Vous pouvez demander l'accès à l'ensemble de vos données personnelles stockées.</li>
-            <li><strong>Droit de rectification :</strong> Vous pouvez corriger toute information inexacte vous concernant.</li>
-            <li><strong>Droit à l'effacement :</strong> Vous pouvez demander la suppression de vos données personnelles.</li>
-            <li><strong>Droit à la portabilité :</strong> Vous pouvez demander une copie de vos données dans un format lisible.</li>
-            <li><strong>Droit d'opposition :</strong> Vous pouvez vous opposer au traitement de vos données à des fins statistiques anonymisées.</li>
-          </ul>
-          <p><strong>Exercice de vos droits :</strong></p>
-          <ul>
-            <li>Pour exercer vos droits, contactez l'éditeur via les canaux indiqués dans la section contact.</li>
-            <li>Les demandes seront traitées dans un délai raisonnable conforme à la réglementation applicable.</li>
-            <li>Les données localisées sur l'appareil (fiches patients fictionalisées) peuvent être supprimées directement par l'utilisateur via la désinstallation de l'application.</li>
-          </ul>
-          <p class="disclaimer">DzPédiatrie ne constitue pas un système de gestion clinique et ne stocke pas de données médicales réelles. Les fiches patients sont fictionalisées et à usage strictement éducatif.</p>
-        </div>
-      </article>
-
-      <div class="section-divider" aria-hidden="true"></div>
-
-      <!-- Section 10: Contact -->
-      <article id="contact" class="card">
-        <header class="card-header">
-          <div class="card-header-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
-              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
-            </svg>
-          </div>
-          <h3>10. Contact</h3>
-        </header>
-        <div class="card-body">
-          <p><strong>Éditeur de l'application :</strong></p>
-          <p><strong>DzPédiatrie — Plateforme éducative en pédiatrie</strong><br>
-          Application mobile de référence documentaire et pédagogique en pédiatrie.<br>
-          Destinée aux utilisateurs recherchant des ressources de référence pédagogiques et documentées en pédiatrie.</p>
-          <p><strong>Canal de contact :</strong></p>
-          <ul>
-            <li>Section "Profil" dans l'application DzPédiatrie.</li>
-            <li>Issues GitHub : <a href="https://github.com/djamalh501-spec/dzpediatrie-privacy/issues" target="_blank" rel="noopener noreferrer">https://github.com/djamalh501-spec/dzpediatrie-privacy/issues</a></li>
-          </ul>
-          <p><strong>Pour toute demande relative à vos données personnelles (RGPD)</strong>, indiquez "Demande RGPD" dans l'objet de votre demande.</p>
-          <p><strong>Avertissement important :</strong></p>
-          <p>DzPédiatrie est une application de <strong>référence éducative et documentaire</strong>. Pour toute urgence médicale réelle, contactez immédiatement les services d'urgence officiels (15 ou 112 en Algérie).</p>
-          <p class="disclaimer">L'éditeur DzPédiatrie ne peut être tenu responsable de l'utilisation des informations documentées de l'application sans vérification selon les protocoles officiels par un professionnel de santé qualifié.</p>
-        </div>
-      </article>
-
-      <!-- Final Disclaimer Card -->
-      <article class="card" style="border-color: var(--warning-border);">
-        <header class="card-header" style="background: var(--warning-bg);">
-          <div class="card-header-icon" aria-hidden="true" style="background: var(--warning-border);">
-            <svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg" style="stroke: var(--warning-text);">
-              <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/>
-              <line x1="12" y1="9" x2="12" y2="13"/>
-              <line x1="12" y1="17" x2="12.01" y2="17"/>
-            </svg>
-          </div>
-          <h3>Mentions Légales Importantes</h3>
-        </header>
-        <div class="card-body">
-          <p><strong>Réserve d'utilisation :</strong></p>
-          <ul>
-            <li>DzPédiatrie est une <strong>plateforme de référence éducative et documentaire</strong> — elle ne constitue pas un avis médical professionnel.</li>
-            <li>L'ensemble du contenu est <strong>strictement informatif</strong> et doit être vérifié selon les protocoles officiels par un professionnel de santé qualifié.</li>
-            <li>Les résultats des calculateurs <strong>doivent être vérifiés</strong> selon les protocoles officiels avant toute utilisation.</li>
-            <li>Les réponses informatives générées par IA <strong>ne remplacent pas</strong> l'expertise médicale professionnelle.</li>
-            <li>DzPédiatrie <strong>ne diagnostique pas</strong>, <strong>ne prescrit pas</strong>, et <strong>ne remplace pas</strong> la consultation d'un médecin.</li>
-          </ul>
-          <p><strong>Responsabilité :</strong></p>
-          <p>L'utilisation des informations de DzPédiatrie se fait sous la <strong>responsabilité exclusive de l'utilisateur</strong>. L'éditeur DzPédiatrie ne peut être tenu responsable de l'utilisation des informations documentées sans vérification selon les protocoles officiels.
-          <p><strong>En cas d'urgence :</strong></p>
-          <p style="font-weight: 700; color: var(--error);">En cas d'urgence médicale réelle concernant un enfant, contactez immédiatement les services d'urgence officiels (15 ou 112 en Algérie).</p>
-        </div>
-      </article>
-
-    </div>
-  </main>
-
-  <!-- ── Footer ── -->
-  <footer class="footer" role="contentinfo">
-    <div class="footer-inner">
-      <div class="footer-logo">
-        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-          <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 14c-3.3 0-6-2.7-6-6s2.7-6 6-6 6 2.7 6 6-2.7 6-6 6zm0-10c-2.2 0-4 1.8-4 4s1.8 4 4 4 4-1.8 4-4-1.8-4-4-4z"/>
-          <circle cx="12" cy="12" r="3"/>
-        </svg>
-        <span>DzPédiatrie</span>
-      </div>
-
-      <div class="footer-links">
-        <a href="https://github.com/djamalh501-spec/dzpediatrie-privacy" target="_blank" rel="noopener noreferrer">GitHub</a>
-        <a href="#main-content">Politique de Confidentialité</a>
-        <a href="#nature">Nature du Service</a>
-        <a href="#droits">Vos Droits</a>
-      </div>
-
-      <div class="footer-divider"></div>
+    <section id="introduction" class="card">
+      <h2>1. Introduction</h2>
 
       <p>
-        <strong>DzPédiatrie — Plateforme éducative en pédiatrie.</strong><br>
-        Application de référence documentaire et pédagogique destinée à un usage éducatif uniquement.<br>
-        Ne remplace pas un avis médical professionnel. En cas d'urgence, contactez le 15 ou le 112.
+        DzPédiatrie est une plateforme éducative et documentaire en pédiatrie.
+        Cette politique explique quelles données peuvent être collectées,
+        comment elles sont utilisées et comment elles sont protégées.
       </p>
 
-      <div class="footer-divider"></div>
-
-      <p class="footer-legal">
-        &copy; 2026 DzPédiatrie. Tous droits réservés.<br>
-        Application de référence éducative et documentaire. Contenu à vérifier selon les protocoles officiels.<br>
-        <br>
-        Conçu pour les professionnels de santé souhaitant accéder à des informations de référence en pédiatrie à titre éducatif.
+      <p>
+        En utilisant l’application, vous acceptez les pratiques décrites
+        dans cette politique de confidentialité.
       </p>
-    </div>
+    </section>
+
+    <section id="donnees" class="card">
+      <h2>2. Données collectées</h2>
+
+      <h3>Données fournies volontairement</h3>
+
+      <ul>
+        <li>Adresse email</li>
+        <li>Nom affiché</li>
+        <li>Informations de profil facultatives</li>
+      </ul>
+
+      <h3>Données techniques</h3>
+
+      <ul>
+        <li>Type d’appareil</li>
+        <li>Version du système</li>
+        <li>Informations techniques de fonctionnement</li>
+        <li>Logs anonymisés de performance et stabilité</li>
+      </ul>
+
+      <h3>Données de contenu</h3>
+
+      <ul>
+        <li>Questions éducatives saisies dans l’application</li>
+        <li>Préférences d’utilisation</li>
+        <li>Historique documentaire local</li>
+      </ul>
+    </section>
+
+    <section id="utilisation" class="card">
+      <h2>3. Utilisation des données</h2>
+
+      <p>Les informations collectées peuvent être utilisées pour :</p>
+
+      <ul>
+        <li>Assurer le bon fonctionnement de la plateforme</li>
+        <li>Améliorer l’expérience utilisateur</li>
+        <li>Fournir des contenus éducatifs et documentaires</li>
+        <li>Renforcer la sécurité et la stabilité du service</li>
+        <li>Corriger les erreurs techniques</li>
+      </ul>
+    </section>
+
+    <section id="stockage" class="card">
+      <h2>4. Stockage et sécurité</h2>
+
+      <p>
+        Les données sont protégées à l’aide de mesures techniques raisonnables
+        destinées à limiter les accès non autorisés.
+      </p>
+
+      <div class="info-grid">
+
+        <div class="info-item">
+          <span>Plateforme</span>
+          Supabase
+        </div>
+
+        <div class="info-item">
+          <span>Authentification</span>
+          Sécurisée
+        </div>
+
+        <div class="info-item">
+          <span>Base de données</span>
+          PostgreSQL
+        </div>
+
+        <div class="info-item">
+          <span>Version</span>
+          1.0
+        </div>
+
+      </div>
+    </section>
+
+    <section id="partage" class="card">
+      <h2>5. Partage des informations</h2>
+
+      <p>
+        DzPédiatrie ne vend pas les données personnelles des utilisateurs.
+      </p>
+
+      <p>
+        Certaines informations techniques peuvent être traitées par des
+        services nécessaires au fonctionnement de l’application.
+      </p>
+
+      <p>
+        Les données peuvent être divulguées uniquement lorsque la loi
+        l’exige ou pour protéger la sécurité du service.
+      </p>
+    </section>
+
+    <section id="droits" class="card">
+      <h2>6. Vos droits</h2>
+
+      <p>Vous pouvez :</p>
+
+      <ul>
+        <li>Accéder à vos informations</li>
+        <li>Modifier vos données</li>
+        <li>Demander la suppression de votre compte</li>
+        <li>Limiter certaines utilisations de données</li>
+      </ul>
+    </section>
+
+    <section id="suppression" class="card">
+      <h2>7. Suppression des données</h2>
+
+      <p>
+        Vous pouvez demander la suppression de votre compte et de vos données
+        associées à tout moment.
+      </p>
+
+      <p>
+        Certaines données techniques minimales peuvent être conservées
+        temporairement pour des raisons légales, sécuritaires ou de stabilité.
+      </p>
+    </section>
+
+    <section id="ia" class="card">
+      <h2>8. Informations générées</h2>
+
+      <p>
+        Les contenus générés dans DzPédiatrie constituent uniquement des
+        informations éducatives et documentaires.
+      </p>
+
+      <p>
+        La plateforme ne fournit pas de diagnostic médical,
+        ne remplace pas une consultation professionnelle
+        et ne constitue pas un système clinique.
+      </p>
+
+      <p>
+        Les informations affichées doivent toujours être vérifiées selon
+        les protocoles officiels et les références applicables.
+      </p>
+    </section>
+
+    <section id="responsabilite" class="card">
+      <h2>9. Limitation de responsabilité</h2>
+
+      <p>
+        L’utilisation des contenus de DzPédiatrie se fait sous la
+        responsabilité exclusive de l’utilisateur.
+      </p>
+
+      <p>
+        DzPédiatrie fournit une plateforme documentaire et éducative.
+        L’éditeur ne peut être tenu responsable d’une utilisation
+        des informations sans vérification appropriée.
+      </p>
+    </section>
+
+    <section id="contact" class="card">
+      <h2>10. Contact</h2>
+
+      <p>
+        Pour toute question concernant cette politique de confidentialité,
+        vous pouvez contacter l’équipe DzPédiatrie via l’adresse associée
+        à la publication officielle de l’application.
+      </p>
+    </section>
+
+  </main>
+
+  <footer>
+    © 2026 DzPédiatrie — Plateforme éducative et documentaire.
   </footer>
 
 </body>
